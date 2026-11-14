@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.app {
+    width: 90%;
+    max-width: 750px;
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.app h1 {
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ff6347;
+}
+
+.nav-link {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #e94b35;
+}
+
+.page {
+    padding: 25px;
+}
+
+.page h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.student-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.student-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.student-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.student-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 9px 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-btn {
+    background-color: #222;
+}
+
+.add-btn:hover {
+    background-color: #444;
+}
+
+.add-btn:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+.remove-btn {
+    background-color: tomato;
+}
+
+.remove-btn:hover {
+    background-color: #d93620;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 30px 10px;
+    color: #888;
+}
+
+@media (max-width: 500px) {
+
+    .app {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .app h1 {
+        font-size: 22px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 12px 5px;
+    }
+
+    .student-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
